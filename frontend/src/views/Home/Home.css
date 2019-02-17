@@ -1,0 +1,17 @@
+.Home {
+  width: 100%;
+}
+
+.content {
+  margin-top: 4em;
+}
+
+.bio_intro {
+  margin-bottom: 3em;
+}
+
+.intro_name {
+  font-size: 2em;
+  text-decoration: underline;
+  font-style: italic;
+}
