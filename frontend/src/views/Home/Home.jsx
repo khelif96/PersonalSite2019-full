@@ -11,38 +11,29 @@ class Home extends Component {
   }
 
   render() {
+    const introText = `
+  i am a senior at the *city college of new york*
+studying computer science.
+  i am currently a lead websecurity tpm with
+      [codepath/facebook](https://codepath.org/classes)
+, previously at [work & co](https://work.co/).
+            if you want to learn more about me checkout my
+      [linkedin](https://linkedin.com/in/mohamedkhelif)
+            or my
+      [github](https://github.com/khelif96)
+. if you want to connect shoot me an
+      [email](mailto:khelif96@gmail.com?subject=LetsConnect).
+    `;
     return (
       <div className="Home">
         <Header />
         <div className="content">
           <div className="bio">
-            <TextBox className="bio_intro">
-            my name is
-              {' '}
-              <span className="intro_name">mohamed khelif.</span>
+            <TextBox escapeHtml={false} className="bio_intro">
+              {"my name is <span className='intro_name'>mohamed khelif.</span>"}
             </TextBox>
             <TextBox>
-          i am a senior at the
-              {' '}
-              <i>city college of new york</i>
-              {' '}
-studying computer science.
-                      i am currently a lead websecurity tpm with
-              {' '}
-              <a href="https://codepath.org/classes">codepath/facebook</a>
-, previously at
-              {' '}
-              <a href="https://work.co/">work & co</a>
-.
-                    if you want to learn more about me checkout my
-              {' '}
-              <a href="https://linkedin.com/in/mohamedkhelif">linkedin</a>
-                    or my
-              {' '}
-              <a href="https://github.com/khelif96"> github</a>
-. if you want to connect shoot me an
-              {' '}
-              <a href="mailto:khelif96@gmail.com?subject=LetsConnect">email</a>
+              {introText}
             </TextBox>
           </div>
           <ProjectsContainer />
