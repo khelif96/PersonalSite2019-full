@@ -1,0 +1,15 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 95vw;
+}
+
+
+.right {
+  display: flex;
+}
+
+.hideSmall {
+  display: none;
+}

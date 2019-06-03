@@ -1,0 +1,67 @@
+.Home {
+  width: 100%;
+}
+
+.bio_intro {
+  margin-bottom: 3em;
+}
+
+.intro_name {
+  font-size: 2em;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.slantLeft {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: -2;
+  border-top: 38vh solid var(--color-blue);
+  border-right: 50vw solid transparent;
+}
+
+.slantRight {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: -2;
+  right: 0;
+  border-top: 25vh solid var(--color-green);
+  border-left: 75vw solid transparent;
+}
+
+.content {
+  margin-top: 0;
+
+  /* margin-left: 2em;
+  margin-right: 1em;
+  padding-top: 1em; */
+}
+
+.introContainer {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+}
+
+.introTitle h3 {
+  font-family: 'Roboto Mono', monospace;
+  color: var(--color-green);
+}
+
+.introTitle h1 {
+  color: var(--main-white);
+}
+
+.introTitle h1:nth-child(3n) {
+  opacity: 0.6;
+}
+
+@media only screen and (min-width: 768px) {
+  .introContainer {
+    width: 100vw;
+  }
+}
