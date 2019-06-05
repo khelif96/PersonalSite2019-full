@@ -1,11 +1,15 @@
 .App {
-
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 ::-webkit-scrollbar {
-  /* width: 0px;  /* remove scrollbar space */
+  width: 0;  /* remove scrollbar space
   background: transparent;  /* optional: just make scrollbar invisible */
 }
+
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
   background: #ecf0ff;
