@@ -1,0 +1,32 @@
+.container {
+  height: 100vh;
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-white);
+  margin-left: 1em;
+  margin-right: 1em;
+  scroll-snap-align: start;
+}
+
+.content {
+  justify-content: center;
+  padding-left: 3em;
+}
+
+h2 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2em;
+}
+
+.text {
+  font-family: 'Roboto Mono', monospace;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
