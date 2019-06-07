@@ -1,26 +1,9 @@
-import React, { PureComponent } from 'react';
-import propTypes from 'prop-types';
+import React from 'react';
 import styles from './About.module.css';
 import { TextBox } from '../../components';
-import { lightHoneycomb } from '../../res';
 
-class About extends PureComponent {
-  static propTypes = {
-
-  }
-
-  static defaultProps = {
-
-  }
-
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
-
-  render() {
-    const introText = `
+function About() {
+  const introText = `
   I am a senior at the *city college of new york*
 studying computer science.
   I am currently a software engineering intern at [mongodb](https://mongodb.com)
@@ -34,15 +17,14 @@ studying computer science.
 . if you want to connect shoot me an
       [email](mailto:khelif96@gmail.com?subject=LetsConnect).
     `;
-    return (
-      <div id="about" className={styles.container}>
-        <div className={styles.content}>
-          <h2>About Me</h2>
-          <TextBox className={styles.text}>{introText}</TextBox>
-        </div>
-
+  return (
+    <div id="about" className={styles.container}>
+      <div className={styles.content}>
+        <h2>About Me</h2>
+        <TextBox className={styles.text}>{introText}</TextBox>
       </div>
-    );
-  }
+
+    </div>
+  );
 }
 export default About;
