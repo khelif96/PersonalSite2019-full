@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { Header, TextBox, ProjectsContainer } from '../../components';
+import React, { PureComponent } from 'react';
+import { Header } from '../../components';
 
 import styles from './Home.module.css';
 
-class Home extends Component {
+class Home extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -25,9 +25,11 @@ studying computer science.
       [email](mailto:khelif96@gmail.com?subject=LetsConnect).
     `;
     return (
-      <div className={styles.Home}>
-        <div className={styles.slantLeft} />
-        <div className={styles.slantRight} />
+      <div id="home" className={styles.container}>
+        <div className={styles.slants}>
+          <div className={styles.slantLeft} />
+          <div className={styles.slantRight} />
+        </div>
         <div className={styles.content}>
           <Header />
 
