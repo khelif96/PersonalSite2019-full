@@ -6,7 +6,6 @@ import Menu from './Menu/Menu';
 function Header() {
   return (
     <div className={styles.Header}>
-      <Logo />
       <div className={styles.right}>
         <Menu />
       </div>
