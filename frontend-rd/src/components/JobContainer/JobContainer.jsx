@@ -7,8 +7,9 @@ function JobContainer(props) {
   const { jobs } = props;
   return (
     <div className={styles.container}>
-      {jobs.map(job => (
+      {jobs.map((job, index) => (
         <JobBlock
+          key={index}
           title={job.title}
           company={job.company}
           timePeriod={job.timePeriod}

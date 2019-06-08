@@ -1,0 +1,14 @@
+.container {
+  font-family: 'Roboto Mono', monospace;
+  margin-left: 0.5em;
+}
+
+.container h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: var(--color-green);
+}
+
+.container p {
+  color: var(--main-white);
+}

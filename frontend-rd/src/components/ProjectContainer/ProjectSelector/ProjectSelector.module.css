@@ -1,0 +1,30 @@
+.container {
+  height: 100%;
+  width: 30%;
+  border-right: solid 1px var(--color-green);
+}
+
+.button {
+  transition: 0.5s ease;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.button:hover {
+  transition: 0.5s ease;
+  text-decoration: underline;
+
+  /* background-color: var(--main-white); */
+  color: var(--color-green);
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.button h4 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
