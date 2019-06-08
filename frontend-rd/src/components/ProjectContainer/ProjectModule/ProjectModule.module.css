@@ -5,10 +5,43 @@
 
 .container h2 {
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0;
+  padding-bottom: 0;
   color: var(--color-green);
 }
 
-.container p {
+.textbox {
   color: var(--main-white);
+  margin-top: 0;
+}
+
+.content {
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.links {
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.links a {
+  margin-right: 1em;
+  color: var(--main-white);
+}
+
+.links a:hover {
+  color: var(--color-green);
+}
+
+@media only screen and (min-width: 768px) {
+  .links {
+    justify-content: flex-start;
+  }
+
+  .content {
+    height: 32vh;
+  }
 }

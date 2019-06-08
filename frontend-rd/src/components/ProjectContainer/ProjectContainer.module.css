@@ -1,6 +1,12 @@
 .container {
   display: flex;
   flex-direction: row;
-  width: 40vw;
-  height: 40vh;
+  width: 95vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 40vw;
+    height: 40vh;
+  }
 }
