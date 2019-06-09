@@ -9,7 +9,6 @@ studying computer science.
   I am currently a software engineering intern at [mongodb](https://mongodb.com)
   and a lead websecurity tpm with
       [codepath/facebook](https://codepath.org/classes)
-, previously at [work & co](https://work.co/).
             If you want to learn more about me checkout my
       [linkedin](https://linkedin.com/in/mohamedkhelif)
             or my
