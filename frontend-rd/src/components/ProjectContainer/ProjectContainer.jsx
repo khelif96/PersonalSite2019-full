@@ -72,7 +72,19 @@ class ProjectContainer extends PureComponent {
           description={projects[selectedProject].description}
           github={projects[selectedProject].github}
           link={projects[selectedProject].link}
+          className={styles.hideSmall}
         />
+        <div className={styles.smallScroll}>
+          {projects.map(project => (
+            <ProjectModule
+              title={project.title}
+              description={project.description}
+              github={project.github}
+              link={project.link}
+              className={styles.scrollModule}
+            />
+          ))}
+        </div>
       </div>
     );
   }

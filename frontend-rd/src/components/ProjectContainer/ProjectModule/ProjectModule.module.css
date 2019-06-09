@@ -16,7 +16,8 @@
 }
 
 .content {
-  height: 70vh;
+  width: 95vw;
+  height: 60vh;
   overflow-y: scroll;
 }
 
@@ -43,5 +44,6 @@
 
   .content {
     height: 32vh;
+    width: auto;
   }
 }
