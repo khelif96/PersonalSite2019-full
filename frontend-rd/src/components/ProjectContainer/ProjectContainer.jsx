@@ -26,14 +26,23 @@ class ProjectContainer extends PureComponent {
   Rails is being built as a Progressive Web App in which it is usable offline.
 
   Technologies
+
   Firebase - our noSQL Backend as a Service and authentication service
+
   Ant Design - our UI library
+
   Google Cloud - our API/Backend hosting
+
   ReactJS - our front-end framework
+
   Node.js - our back-end runtime and API
+
   React Big Calendar - our calendar view UI
+
   React Router - our routing manager
+
   Jest - our testing tool
+
   Enzyme - our testing tool
 
   I was responsible for several aspects of the application including system design, Continuation integration and deployment.
@@ -46,12 +55,14 @@ class ProjectContainer extends PureComponent {
     {
       title: 'Railroad Management System',
       description: `
-      * Created Full-stack web application to manage Train Schedules and Reserve tickets.
+  * Created Full-stack web application to manage Train Schedules and Reserve tickets.
   * Deployed MariaDB database on AWS RDS and created several tables to create a Normalized Database.
   * Developed NodeJS API to communicate with the database and manipulate tables as well as communicate with the front end and handle logic
   * Developed Front-end using ReactJS to cleanly and efficiently display data obtained from API Routes. And allow easy use by customers
   * Deployed on AWS EC2 Instance for front end server and Backend Server and AWS RDS for the database.`,
+      link: 'https://github.com/khelif96/railroad-database',
     },
+
     ];
     return (
       <div className={styles.container}>
@@ -61,7 +72,19 @@ class ProjectContainer extends PureComponent {
           description={projects[selectedProject].description}
           github={projects[selectedProject].github}
           link={projects[selectedProject].link}
+          className={styles.hideSmall}
         />
+        <div className={styles.smallScroll}>
+          {projects.map(project => (
+            <ProjectModule
+              title={project.title}
+              description={project.description}
+              github={project.github}
+              link={project.link}
+              className={styles.scrollModule}
+            />
+          ))}
+        </div>
       </div>
     );
   }

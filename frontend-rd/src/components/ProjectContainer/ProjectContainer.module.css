@@ -1,6 +1,41 @@
 .container {
   display: flex;
   flex-direction: row;
-  width: 40vw;
-  height: 40vh;
+  width: 95vw;
+}
+
+.smallScroll {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.hideSmall {
+  display: none;
+}
+
+.scrollModule {
+  scroll-snap-align: start;
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 40vw;
+    height: 40vh;
+  }
+
+  .smallScroll {
+    display: none;
+  }
+
+  .hideSmall {
+    display: flex;
+    flex-direction: column;
+  }
 }
