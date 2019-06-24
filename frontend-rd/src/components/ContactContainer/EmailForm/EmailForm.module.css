@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+  justify-content: center;
+  color: var(--color-green);
+  font-size: 2em;
+  font-family: 'Roboto Monospace', monospace;
+}

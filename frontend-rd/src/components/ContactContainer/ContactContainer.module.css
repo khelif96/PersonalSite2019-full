@@ -1,0 +1,36 @@
+.container {
+  height: 100%;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@supports (scroll-snap-align: start) {
+  .container {
+    scroll-snap-align: start;
+  }
+}
+
+@supports not (scroll-snap-align: start) {
+  /* old scroll snap points spec */
+  .container {
+    scroll-snap-coordinate: 0 0;
+  }
+}
+
+.iconsContainer {
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+}
+
+.iconsContainer a {
+  color: var(--main-white);
+  margin: 1em;
+}
+
+.iconsContainer a:hover {
+  color: var(--color-green);
+}
