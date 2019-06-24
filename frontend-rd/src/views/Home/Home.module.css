@@ -1,7 +1,19 @@
 .container {
   width: 100%;
-  height: 100vh;
-  scroll-snap-align: start;
+  min-height: 100vh;
+}
+
+@supports (scroll-snap-align: start) {
+  .container {
+    scroll-snap-align: start;
+  }
+}
+
+@supports not (scroll-snap-align: start) {
+  /* old scroll snap points spec */
+  .container {
+    scroll-snap-coordinate: 0 0;
+  }
 }
 
 .bio_intro {

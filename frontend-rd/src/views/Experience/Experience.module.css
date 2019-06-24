@@ -1,9 +1,21 @@
 .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  scroll-snap-align: start;
+}
+
+@supports (scroll-snap-align: start) {
+  .container {
+    scroll-snap-align: start;
+  }
+}
+
+@supports not (scroll-snap-align: start) {
+  /* old scroll snap points spec */
+  .container {
+    scroll-snap-coordinate: 0 0;
+  }
 }
 
 h2 {

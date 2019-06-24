@@ -1,13 +1,12 @@
 .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  scroll-snap-align: start;
 }
 
 .projectsContainer {
-  height: 100%;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
 }
@@ -15,5 +14,18 @@
 @media only screen and (min-width: 768px) {
   .projectsContainer {
     justify-content: center;
+  }
+}
+
+@supports (scroll-snap-align: start) {
+  .container {
+    scroll-snap-align: start;
+  }
+}
+
+@supports not (scroll-snap-align: start) {
+  /* old scroll snap points spec */
+  .container {
+    scroll-snap-coordinate: 0 0;
   }
 }

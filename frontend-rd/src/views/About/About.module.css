@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--main-bg-color);
   display: flex;
   justify-content: center;
@@ -7,7 +7,19 @@
   color: var(--main-white);
   margin-left: 1em;
   margin-right: 1em;
-  scroll-snap-align: start;
+}
+
+@supports (scroll-snap-align: start) {
+  .container {
+    scroll-snap-align: start;
+  }
+}
+
+@supports not (scroll-snap-align: start) {
+  /* old scroll snap points spec */
+  .container {
+    scroll-snap-coordinate: 0 0;
+  }
 }
 
 .content {

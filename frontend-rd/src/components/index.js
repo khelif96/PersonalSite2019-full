@@ -3,7 +3,9 @@ import Header from './Header/Header';
 import TextBox from './TextBox/TextBox';
 import JobContainer from './JobContainer/JobContainer';
 import ProjectContainer from './ProjectContainer/ProjectContainer';
+import ContactContainer from './ContactContainer/ContactContainer';
+import Footer from './Footer/Footer';
 
 export {
-  Button, Header, TextBox, JobContainer, ProjectContainer,
+  Button, Header, TextBox, JobContainer, ProjectContainer, ContactContainer, Footer,
 };
