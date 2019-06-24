@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  font-size: 2em;
+  background-color: var(--main-white);
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container i {
+  color: var(--color-green);
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}

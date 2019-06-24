@@ -12,7 +12,7 @@ function Menu() {
           <li><a href="#about">about</a></li>
           <li><a href="#experience">experience</a></li>
           <li><a href="#projects">projects</a></li>
-          <li>contact</li>
+          <li><a href="#contact">contact</a></li>
         </ol>
       </div>
     </Fragment>
