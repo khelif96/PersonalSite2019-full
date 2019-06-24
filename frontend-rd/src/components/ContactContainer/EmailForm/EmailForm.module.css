@@ -2,6 +2,14 @@
   display: flex;
   justify-content: center;
   color: var(--color-green);
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: 'Roboto Monospace', monospace;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 2em;
+  }
 }

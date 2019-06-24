@@ -1,10 +1,20 @@
 .container {
   height: 100%;
-  width: 50vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social h2 {
+  text-align: center;
 }
 
 @supports (scroll-snap-align: start) {
@@ -33,4 +43,11 @@
 
 .iconsContainer a:hover {
   color: var(--color-green);
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
