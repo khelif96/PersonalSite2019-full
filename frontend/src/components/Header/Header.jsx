@@ -1,19 +1,14 @@
-import React, { PureComponent } from 'react';
-import './Header.css';
-import { Button } from '..';
-import Logo from './Logo/Logo';
+import React from 'react';
+import styles from './Header.module.css';
+import Menu from './Menu/Menu';
 
-class Header extends PureComponent {
-  render() {
-    return (
-      <div className="Header">
-        <Logo />
-        <Button text="Resume" />
+function Header() {
+  return (
+    <div className={styles.Header}>
+      <div className={styles.right}>
+        <Menu />
       </div>
-
-
-    );
-  }
+    </div>
+  );
 }
-
 export default Header;

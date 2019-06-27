@@ -10,9 +10,10 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.2",
     "react-apollo": "^2.4.1",
+    "react-apollo-hooks": "^0.4.5",
     "react-dom": "^16.8.2",
     "react-markdown": "^4.0.6",
-    "react-scripts": "^2.1.8"
+    "react-scripts": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,7 +31,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "eslint": "^5.12.0",
     "eslint-config-airbnb": "^17.1.0",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0"
