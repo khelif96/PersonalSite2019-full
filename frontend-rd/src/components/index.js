@@ -8,5 +8,6 @@ import Footer from './Footer/Footer';
 import LoadingAnimation from './Loading/Loading';
 
 export {
-  Button, Header, TextBox, JobContainer, ProjectContainer, ContactContainer, Footer, LoadingAnimation,
+  Button, Header, TextBox, JobContainer, ProjectContainer, ContactContainer,
+  Footer, LoadingAnimation,
 };
