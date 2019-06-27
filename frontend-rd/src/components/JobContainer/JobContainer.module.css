@@ -2,3 +2,11 @@
   overflow-y: scroll;
   height: 75vh;
 }
+
+.loadingContainer {
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

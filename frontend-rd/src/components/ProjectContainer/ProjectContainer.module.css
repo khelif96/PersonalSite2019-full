@@ -24,6 +24,14 @@
   display: none;
 }
 
+.loadingContainer {
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     width: 40vw;
