@@ -2,7 +2,7 @@ import React from 'react';
 import propTypes from 'prop-types';
 import styles from './JobBlock.module.css';
 
-function JobBlock(props) {
+const JobBlock = (props) => {
   const {
     title,
     company,
@@ -23,7 +23,7 @@ function JobBlock(props) {
 
     </div>
   );
-}
+};
 
 JobBlock.propTypes = {
   title: propTypes.string.isRequired,

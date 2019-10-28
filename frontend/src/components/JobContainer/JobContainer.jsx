@@ -5,7 +5,7 @@ import styles from './JobContainer.module.css';
 import JobBlock from './JobBlock/JobBlock';
 import { LoadingAnimation } from '..';
 
-function JobContainer() {
+const JobContainer = () => {
   const GET_PROJECTS = gql`{
   jobs {
     title
@@ -40,6 +40,6 @@ ERROR!
       ))}
     </div>
   );
-}
+};
 
 export default JobContainer;

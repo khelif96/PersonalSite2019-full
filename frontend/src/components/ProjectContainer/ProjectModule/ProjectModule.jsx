@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import { TextBox } from '../..';
 import styles from './ProjectModule.module.css';
 
-function ProjectModule(props) {
+const ProjectModule = (props) => {
   const {
     title,
     description,
@@ -25,7 +25,7 @@ function ProjectModule(props) {
       </div>
     </div>
   );
-}
+};
 
 ProjectModule.propTypes = {
   title: propTypes.string.isRequired,

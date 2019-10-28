@@ -6,7 +6,7 @@ import ProjectModule from './ProjectModule/ProjectModule';
 import { LoadingAnimation } from '..';
 import styles from './ProjectContainer.module.css';
 
-function ProjectContainer() {
+const ProjectContainer = () => {
   const [selectedProject, selectProject] = useState(0);
 
   const GET_PROJECTS = gql`{
@@ -56,6 +56,6 @@ ERROR!
       </div>
     </div>
   );
-}
+};
 
 export default ProjectContainer;

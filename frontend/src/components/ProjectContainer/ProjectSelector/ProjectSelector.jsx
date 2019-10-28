@@ -2,14 +2,12 @@ import React from 'react';
 import propTypes from 'prop-types';
 import styles from './ProjectSelector.module.css';
 
-function button(name, id, selectProject) {
-  return (
-    <div onClick={() => selectProject(id)} className={styles.button} key={id}>
-      <h4>{name}</h4>
-    </div>
-  );
-}
-function ProjectSelector(props) {
+const button = (name, id, selectProject) => (
+  <div onClick={() => selectProject(id)} className={styles.button} key={id}>
+    <h4>{name}</h4>
+  </div>
+);
+const ProjectSelector = (props) => {
   const {
     projects,
     selectProject,
@@ -19,7 +17,7 @@ function ProjectSelector(props) {
       {projects && projects.map((project, index) => button(project.title, index, selectProject))}
     </div>
   );
-}
+};
 
 ProjectSelector.propTypes = {
   projects: propTypes.arrayOf(propTypes.shape({
