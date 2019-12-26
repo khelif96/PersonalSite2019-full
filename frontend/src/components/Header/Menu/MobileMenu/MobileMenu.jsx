@@ -1,4 +1,6 @@
 import React from 'react';
+import propTypes from 'prop-types';
+
 import classnames from 'classnames';
 import styles from './MobileMenu.module.css';
 
@@ -13,5 +15,10 @@ const MobileMenu = ({ menuOpened, toggleMenu }) => (
     </ol>
   </div>
 );
+
+MobileMenu.propTypes = {
+  menuOpened: propTypes.bool.isRequired,
+  toggleMenu: propTypes.func.isRequired
+}
 
 export default MobileMenu;

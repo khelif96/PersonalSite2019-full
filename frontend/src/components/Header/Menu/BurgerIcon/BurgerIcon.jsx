@@ -1,46 +1,7 @@
-
-import React, { PureComponent } from 'react';
+import React from 'react';
 import propTypes from 'prop-types';
 import classnames from 'classnames';
 import styles from './BurgerIcon.module.css';
-
-// class BurgerIcon extends PureComponent {
-//   static propTypes = {
-//     onClick: propTypes.func.isRequired,
-//   }
-//
-//   static defaultProps = {
-//     onClick: () => console.log('Clicked'),
-//   }
-//
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       active: false,
-//     };
-//   }
-//
-//   clicked = () => {
-//     const {
-//       active,
-//     } = this.state;
-//     this.setState({ active: !active });
-//     const {
-//       onClick,
-//     } = this.props;
-//     onClick();
-//   }
-//
-//   render() {
-//     const {
-//       active,
-//     } = this.state;
-//     const {
-//       className,
-//     } = this.props;
-//
-//   }
-// }
 
 const BurgerIcon = ({ onClick, className, active }) => {
   return (
@@ -50,5 +11,14 @@ const BurgerIcon = ({ onClick, className, active }) => {
       <div className={styles.bar3} />
     </div>
   );
+}
+
+BurgerIcon.defaultProps = {
+  className: null
+}
+BurgerIcon.propTypes = {
+  onClick: propTypes.func.isRequired,
+  className: propTypes.string,
+  active: propTypes.bool.isRequired
 }
 export default BurgerIcon;
