@@ -1,0 +1,54 @@
+.container {
+  z-index: 99;
+  width: 75vw;
+  height: 100vh;
+  position: fixed;
+  left: -5vw;
+  padding-left: 15vw;
+  background-color: var(--main-bg-color);
+}
+
+.menuList {
+  font-size: 25pt;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Roboto Mono', monospace;
+  list-style: none;
+  counter-reset: li;
+}
+
+.menuList li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.menuList li::before {
+  content: '.0'counter(li);
+  color: var(--main-color);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  text-align: right;
+  direction: rtl;
+}
+
+.menuList li {
+  transition: 0.5s;
+  color: var(--main-white);
+  counter-increment: li;
+}
+
+
+.hideMenu {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .hideSmall {
+    display: none;
+  }
+}
