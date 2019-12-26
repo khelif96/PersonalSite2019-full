@@ -1,5 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import { TextBox } from '../..';
 import styles from './JobBlock.module.css';
 
 const JobBlock = (props) => {
@@ -15,11 +16,11 @@ const JobBlock = (props) => {
       <h4>
         {company}
         {' '}
--
+        -
         {' '}
         {timePeriod}
       </h4>
-      <p>{description}</p>
+      <TextBox>{description}</TextBox>
 
     </div>
   );

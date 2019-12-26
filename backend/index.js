@@ -50,8 +50,8 @@ Check out the full write up below
     github: 'https://github.com/lihaojin/Movie_Data_Analysis'
   },
   {
-      title: 'Rails',
-      description: `
+    title: 'Rails',
+    description: `
 “Rails” is a platform for teachers and students. Rails will help organize all events in a class. From helping set due dates and reminders to providing a discussion forum for events in a class.
 Rails is being built as a Progressive Web App in which it is usable offline.
 
@@ -79,36 +79,45 @@ I was responsible for several aspects of the application including system design
 I built out several core UI elements, as well as enabled Progressive web app functionality.
 I also developed the caching mechanisms and developed our client side routing authentication method.
         `,
-      github: ' https://github.com/CSC59939/Rails',
-      link: 'https://rails-students.firebaseapp.com/',
-    },
-    {
-      title: 'Railroad Management System',
-      description: `
+    github: ' https://github.com/CSC59939/Rails',
+    link: 'https://rails-students.firebaseapp.com/',
+  },
+  {
+    title: 'Railroad Management System',
+    description: `
 * Created Full-stack web application to manage Train Schedules and Reserve tickets.
 * Deployed MariaDB database on AWS RDS and created several tables to create a Normalized Database.
 * Developed NodeJS API to communicate with the database and manipulate tables as well as communicate with the front end and handle logic
 * Developed Front-end using ReactJS to cleanly and efficiently display data obtained from API Routes. And allow easy use by customers
 * Deployed on AWS EC2 Instance for front end server and Backend Server and AWS RDS for the database.`,
-      link: 'https://github.com/khelif96/railroad-database',
-    }
+    link: 'https://github.com/khelif96/railroad-database',
+  }
 ]
 
 const jobs = [
   {
+    title: 'Software Engineer',
+    company: 'MongoDB',
+    timePeriod: 'January 2020 - Present',
+    description: `Working on New and Exciting Things`
+  },
+  {
     title: 'Software Engineering Internship',
     company: 'MongoDB',
-    timePeriod: 'June 2019 - Present',
+    timePeriod: 'June 2019 - December 2019',
     description: `Education Team
-University Platform`
-},
+University Platform. Worked with ReactJS, GraphQL and Python. Helped build and launch [Learning Paths](https://www.mongodb.com/blog/post/get-started-with-mongodb-university-learning-paths)`
+  },
   {
     title: 'Lead TPM',
     company: 'CodePath.org',
     timePeriod: 'November 2018 - Present',
     description: `As a Lead Technical Program Manager (TPM) some additional responsibilities include:
+
 •	Managing multiple class sections
+
 •	Communicating and escalating issues to Codepath
+
 •	Making cohort-wide announcements and synchronize TPM goals.
 
 Codepath provides free, focused courses aimed towards novice and proficient software engineers.
@@ -116,8 +125,11 @@ Codepath provides free, focused courses aimed towards novice and proficient soft
 Codepath partnered with Facebook to create and continuously develop the Cyber Security course. The course aims to introduce fundamental security concepts to students. It also provides both offensive and defensive projects for students to practice and develop their skills.
 
 As a Technical Program Manager for the Cyber Security course my responsibilities include:
+
 •	Having a firm familiarity with the concepts taught, and the ability to complete the course material.
+
 •	Leading in-class sessions, assisting students with in class labs and providing an introduction to the current week's lesson.
+
 •	Coordinating with Facebook's Information Security Program & Operations Manager, CodePath instructors to oversee the course as students advance.
 
 Codepath Site:
@@ -125,17 +137,23 @@ https://codepath.org/
 
 Cyber Security Course Overview:
 https://courses.codepath.com/snippets/cybersecurity_university/course_overview `
-},
+  },
   {
     title: 'Software Developer Internship',
     company: 'Work & Co',
     timePeriod: 'June 2018 - August 2018',
     description: `Worked on a large scale multi platform digital product distribution system for Epic Games
+
 •	Collaborated with design/ development teams to rapidly prototype and build features
-•	Developed with React JS, Redux, Redux Sagas, GraphQL,NodeJS,
+
+•	Developed with React JS, Redux, Redux Sagas, GraphQL,NodeJS
+
 • Wrote unit tests for components and features.
+
 •	Debugged several bugs across several browsers and environments.
+
 •	Participated in daily stand up meetings with clients
+
 •	Participated in PR review process `,
   },
   {
@@ -143,9 +161,13 @@ https://courses.codepath.com/snippets/cybersecurity_university/course_overview `
     company: '#CUNYCodes',
     timePeriod: 'February 2018 - May 2018',
     description: `Selected to be part of a competitive cohort lead by industry veteran Gregrian Vassell working to develop applied experience in Software Development by building a product from concept to valued delivery.
+
 • Agile Scrum Development Methodologies
+
 • Required Designing and implementing user stories and the tracking of Progress using tools such as Pivotal
+
 • Worked in a team of 7 Developers ranging in experience
+
 • Project Used MERN Stack (Mongo Express React Node)`
   }
 ]
