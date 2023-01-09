@@ -1,5 +1,9 @@
 const projects = [
   {
+   title: "Parsley",
+   description: "Parsley is a full featured log viewer that is capable of rendering large log files performantly in the browser. It is primarily used by MongoDB engineers to assist in log investigations. Check it out [Here](https://github.com/evergreen-ci/parsley)."
+  },
+  {
     title: 'Uploading files from a React app to AWS S3 the right way.',
     description: `
 Medium article I wrote for uploading files to AWS S3 from a React App.
