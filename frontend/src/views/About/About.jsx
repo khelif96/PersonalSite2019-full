@@ -4,11 +4,7 @@ import { TextBox } from '../../components';
 
 function About() {
   const introText = `
-  I recently graduated from the  *city college of new york*
-with a degree in computer science.
-  I am currently a software engineer at [mongodb](https://mongodb.com)
-  and was formerly a lead websecurity tpm with
-      [codepath/facebook](https://codepath.org/classes).
+  I like to travel and race cars. I also build software at [mongodb](https://mongodb.com).
             If you want to learn more about me checkout my
       [linkedin](https://linkedin.com/in/mohamedkhelif)
             or my
