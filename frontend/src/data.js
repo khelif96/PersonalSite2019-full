@@ -96,7 +96,7 @@ const jobs = [
     title: 'Software Engineer',
     company: 'MongoDB',
     timePeriod: 'January 2020 - Present',
-    description: 'Working on New and Exciting Things',
+    description: 'Working on the UI team on Evergreen team a world class CI system. Currently working on [Spruce](https://github.com/evergreen-ci/spruce) Evergreens new UI built with React and GraphQL. Lead development of [Parsley](https://github.com/evergreen-ci/parsley) a fully browser based log viewer that can handle rendering large amounts of data while providing advanced search and investigation capabilities',
   },
   {
     title: 'Software Engineering Internship',
