@@ -7,7 +7,7 @@ import {
 import { Footer } from './components';
 
 
-function App() {
+const App: React.FC = () => {
 
   return (
       <div className="App">

@@ -4,7 +4,7 @@ import ProjectModule from './ProjectModule/ProjectModule';
 import styles from './ProjectContainer.module.css';
 import { projects } from "../../data";
 
-const ProjectContainer = () => {
+const ProjectContainer: React.FC = () => {
   const [selectedProject, selectProject] = useState(0);
 
   return (
@@ -18,8 +18,9 @@ const ProjectContainer = () => {
         className={styles.hideSmall}
       />
       <div className={styles.smallScroll}>
-        {projects.map(project => (
+        {projects.map((project, index) => (
           <ProjectModule
+            key={`${project.title}-${index}`}
             title={project.title}
             description={project.description}
             github={project.github}

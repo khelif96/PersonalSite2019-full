@@ -1,10 +1,17 @@
 import React from 'react';
-import propTypes from 'prop-types';
 import classnames from 'classnames';
 import { TextBox } from '../..';
 import styles from './ProjectModule.module.css';
 
-const ProjectModule = (props) => {
+interface ProjectModuleProps {
+  title: string;
+  description: string;
+  link?: string;
+  github?: string;
+  className?: string;
+}
+
+const ProjectModule: React.FC<ProjectModuleProps> = (props) => {
   const {
     title,
     description,
@@ -27,17 +34,4 @@ const ProjectModule = (props) => {
   );
 };
 
-ProjectModule.propTypes = {
-  title: propTypes.string.isRequired,
-  description: propTypes.string.isRequired,
-  link: propTypes.string,
-  github: propTypes.string,
-  className: propTypes.string,
-};
-
-ProjectModule.defaultProps = {
-  link: undefined,
-  github: undefined,
-  className: undefined,
-};
 export default ProjectModule;

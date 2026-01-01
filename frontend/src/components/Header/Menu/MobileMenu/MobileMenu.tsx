@@ -1,12 +1,17 @@
 import React from 'react';
-import propTypes from 'prop-types';
 
 import classnames from 'classnames';
 import styles from './MobileMenu.module.css';
 
-const MobileMenu = ({ menuOpened, toggleMenu }) => (
+interface MobileMenuProps {
+  menuOpened: boolean;
+  toggleMenu: () => void;
+  className?: string;
+}
 
-  <div className={classnames(styles.container, styles.hideSmall, menuOpened && styles.hideMenu)}>
+const MobileMenu: React.FC<MobileMenuProps> = ({ menuOpened, toggleMenu, className }) => (
+
+  <div className={classnames(styles.container, styles.hideSmall, menuOpened && styles.hideMenu, className)}>
     <ol className={styles.menuList}>
       <li><a onClick={() => toggleMenu()} href="#about">about</a></li>
       <li><a onClick={() => toggleMenu()} href="#experience">experience</a></li>
@@ -15,10 +20,5 @@ const MobileMenu = ({ menuOpened, toggleMenu }) => (
     </ol>
   </div>
 );
-
-MobileMenu.propTypes = {
-  menuOpened: propTypes.bool.isRequired,
-  toggleMenu: propTypes.func.isRequired
-}
 
 export default MobileMenu;

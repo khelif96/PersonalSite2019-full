@@ -1,7 +1,22 @@
-const { ApolloServer, gql } = require('apollo-server');
+export interface Project {
+  title: string;
+  description: string;
+  link?: string;
+  github?: string;
+}
 
+export interface Job {
+  title: string;
+  company: string;
+  timePeriod: string;
+  description: string;
+}
 
-const projects = [
+const projects: Project[] = [
+  {
+   title: "Parsley",
+   description: "Parsley is a full featured log viewer that is capable of rendering large log files performantly in the browser. It is primarily used by MongoDB engineers to assist in log investigations. Check it out [Here](https://github.com/evergreen-ci/parsley)."
+  },
   {
     title: 'Uploading files from a React app to AWS S3 the right way.',
     description: `
@@ -12,7 +27,7 @@ using a minimal amount of external libraries
 
 Article Averages over 1500 views per month`,
     link: 'https://medium.com/@khelif96/uploading-files-from-a-react-app-to-aws-s3-the-right-way-541dd6be689',
-    github: 'https://github.com/khelif96/React-S3-fileuploads'
+    github: 'https://github.com/khelif96/React-S3-fileuploads',
   },
   {
     title: 'Movie Recommendation Engine',
@@ -47,7 +62,7 @@ Check out the full write up below
     `,
 
     link: 'https://medium.com/@khelif96/building-a-movie-recommendation-engine-1f9360da4dbf',
-    github: 'https://github.com/lihaojin/Movie_Data_Analysis'
+    github: 'https://github.com/lihaojin/Movie_Data_Analysis',
   },
   {
     title: 'Rails',
@@ -91,22 +106,22 @@ I also developed the caching mechanisms and developed our client side routing au
 * Developed Front-end using ReactJS to cleanly and efficiently display data obtained from API Routes. And allow easy use by customers
 * Deployed on AWS EC2 Instance for front end server and Backend Server and AWS RDS for the database.`,
     link: 'https://github.com/khelif96/railroad-database',
-  }
-]
+  },
+];
 
-const jobs = [
+const jobs: Job[] = [
   {
     title: 'Software Engineer',
     company: 'MongoDB',
     timePeriod: 'January 2020 - Present',
-    description: `Working on New and Exciting Things`
+    description: 'Working on the UI team on Evergreen team a world class CI system. Currently working on [Spruce](https://github.com/evergreen-ci/spruce) Evergreens new UI built with React and GraphQL. Lead development of [Parsley](https://github.com/evergreen-ci/parsley) a fully browser based log viewer that can handle rendering large amounts of data while providing advanced search and investigation capabilities',
   },
   {
     title: 'Software Engineering Internship',
     company: 'MongoDB',
     timePeriod: 'June 2019 - December 2019',
     description: `Education Team
-University Platform. Worked with ReactJS, GraphQL and Python. Helped build and launch [Learning Paths](https://www.mongodb.com/blog/post/get-started-with-mongodb-university-learning-paths)`
+University Platform. Worked with ReactJS, GraphQL and Python. Helped build and launch [Learning Paths](https://www.mongodb.com/blog/post/get-started-with-mongodb-university-learning-paths)`,
   },
   {
     title: 'Lead TPM',
@@ -136,7 +151,7 @@ Codepath Site:
 https://codepath.org/
 
 Cyber Security Course Overview:
-https://courses.codepath.com/snippets/cybersecurity_university/course_overview `
+https://courses.codepath.com/snippets/cybersecurity_university/course_overview `,
   },
   {
     title: 'Software Developer Internship',
@@ -168,54 +183,8 @@ https://courses.codepath.com/snippets/cybersecurity_university/course_overview `
 
 • Worked in a team of 7 Developers ranging in experience
 
-• Project Used MERN Stack (Mongo Express React Node)`
-  }
-]
-// Type definitions define the "shape" of your data and specify
-// which ways the data can be fetched from the GraphQL server.
-const typeDefs = gql`
-  # Comments in GraphQL are defined with the hash (#) symbol.
-
-  type Project {
-    title: String
-    technologies: [String]
-    description: String
-    link: String
-    github: String
-  }
-
-  type Experience {
-    title: String
-    company: String
-    timePeriod: String
-    description: String
-  }
-
-  # The "Query" type is the root of all GraphQL queries.
-  # (A "Mutation" type will be covered later on.)
-  type Query {
-    projects: [Project]
-    jobs: [Experience]
-  }
-
-`;
-
-// Resolvers define the technique for fetching the types in the
-// schema.  We'll retrieve books from the "books" array above.
-const resolvers = {
-  Query: {
-    projects: () => projects,
-    jobs: () => jobs
+• Project Used MERN Stack (Mongo Express React Node)`,
   },
-};
+];
 
-// In the most basic sense, the ApolloServer can be started
-// by passing type definitions (typeDefs) and the resolvers
-// responsible for fetching the data for those types.
-const server = new ApolloServer({ typeDefs, resolvers });
-
-// This `listen` method launches a web-server.  Existing apps
-// can utilize middleware options, which we'll discuss later.
-server.listen().then(({ url }) => {
-  console.log(`🚀  Server ready at ${url}`);
-});
+export { projects, jobs };

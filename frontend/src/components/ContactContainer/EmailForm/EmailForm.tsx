@@ -2,21 +2,21 @@ import React from 'react';
 import styles from './EmailForm.module.css';
 
 
-function EmailForm() {
+const EmailForm: React.FC = () => {
   const email = ['k', 'h', 'e', 'l', 'i', 'f', '9', '6', '@', 'g', 'm', 'a', 'i', 'l', '.', 'c', 'o', 'm'];
 
   function sendEmail() {
-    window.location.href = `mailto:${email.join()}?subject=Hello there&body=This is the body`;
+    window.location.href = `mailto:${email.join('')}?subject=Hello there&body=This is the body`;
   }
   return (
     <div
       onClick={sendEmail}
-      onKeyPress={sendEmail}
+      onKeyDown={sendEmail}
       role="button"
-      tabIndex="0"
+      tabIndex={0}
       className={styles.container}
     >
-      {email.map(letter => <span>{letter}</span>)}
+      {email.map((letter, index) => <span key={index}>{letter}</span>)}
     </div>
   );
 }

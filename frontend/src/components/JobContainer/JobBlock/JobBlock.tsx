@@ -1,9 +1,15 @@
 import React from 'react';
-import propTypes from 'prop-types';
 import { TextBox } from '../..';
 import styles from './JobBlock.module.css';
 
-const JobBlock = (props) => {
+interface JobBlockProps {
+  title: string;
+  company: string;
+  timePeriod: string;
+  description: string;
+}
+
+const JobBlock: React.FC<JobBlockProps> = (props) => {
   const {
     title,
     company,
@@ -26,11 +32,4 @@ const JobBlock = (props) => {
   );
 };
 
-JobBlock.propTypes = {
-  title: propTypes.string.isRequired,
-  company: propTypes.string.isRequired,
-  timePeriod: propTypes.string.isRequired,
-  description: propTypes.string.isRequired,
-
-};
 export default JobBlock;

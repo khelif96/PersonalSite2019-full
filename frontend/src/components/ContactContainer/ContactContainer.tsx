@@ -2,7 +2,7 @@ import React from 'react';
 import EmailForm from './EmailForm/EmailForm';
 import styles from './ContactContainer.module.css';
 
-function ContactContainer() {
+const ContactContainer: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.social}>

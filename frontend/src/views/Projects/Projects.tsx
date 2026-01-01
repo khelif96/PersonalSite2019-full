@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Projects.module.css';
 import { ProjectContainer } from '../../components';
 
-function Projects() {
+const Projects: React.FC = () => {
   return (
     <div id="projects" className={styles.container}>
       <h2>Projects</h2>

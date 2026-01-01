@@ -1,10 +1,14 @@
 import React, { Fragment } from 'react';
-import propTypes from 'prop-types';
 import classnames from 'classnames';
 import BurgerIcon from './BurgerIcon/BurgerIcon';
 import styles from './Menu.module.css';
 
-const Menu = ({ onClick, active }) => (
+interface MenuProps {
+  onClick: () => void;
+  active: boolean;
+}
+
+const Menu: React.FC<MenuProps> = ({ onClick, active }) => (
   <Fragment>
     <BurgerIcon onClick={onClick} className={styles.hideLarge} active={active} />
     <div className={classnames(styles.container, styles.hideSmall)}>
@@ -18,8 +22,4 @@ const Menu = ({ onClick, active }) => (
   </Fragment>
 );
 
-Menu.propTypes = {
-  onClick: propTypes.func.isRequired,
-  active: propTypes.bool.isRequired
-}
 export default Menu;

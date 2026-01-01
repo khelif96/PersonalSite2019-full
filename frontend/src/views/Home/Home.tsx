@@ -3,7 +3,7 @@ import { Header } from '../../components';
 
 import styles from './Home.module.css';
 
-function Home() {
+const Home: React.FC = () => {
   return (
     <div id="home" className={styles.container}>
       <div className={styles.slants}>

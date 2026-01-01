@@ -2,13 +2,11 @@ import React, { PureComponent } from 'react';
 import classnames from 'classnames';
 import styles from './Logo.module.css';
 
-class Logo extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
+interface LogoProps {
+  className?: string;
+}
 
+class Logo extends PureComponent<LogoProps> {
   render() {
     const {
       className,

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './About.module.css';
 import { TextBox } from '../../components';
 
-function About() {
+const About: React.FC = () => {
   const introText = `
   I like to travel and race cars. I also build software at [mongodb](https://mongodb.com).
             If you want to learn more about me checkout my

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Experience.module.css';
 import { JobContainer } from '../../components';
 
-function Experience() {
+const Experience: React.FC = () => {
   return (
     <div id="experience" className={styles.container}>
       <h2>Experience</h2>

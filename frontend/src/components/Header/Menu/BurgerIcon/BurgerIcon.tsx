@@ -1,9 +1,14 @@
 import React from 'react';
-import propTypes from 'prop-types';
 import classnames from 'classnames';
 import styles from './BurgerIcon.module.css';
 
-const BurgerIcon = ({ onClick, className, active }) => {
+interface BurgerIconProps {
+  onClick: () => void;
+  className?: string | null;
+  active: boolean;
+}
+
+const BurgerIcon: React.FC<BurgerIconProps> = ({ onClick, className, active }) => {
   return (
     <div className={classnames(styles.container, className, !active ? styles.change : null)} onClick={() => onClick()}>
       <div className={styles.bar1} />
@@ -13,12 +18,4 @@ const BurgerIcon = ({ onClick, className, active }) => {
   );
 }
 
-BurgerIcon.defaultProps = {
-  className: null
-}
-BurgerIcon.propTypes = {
-  onClick: propTypes.func.isRequired,
-  className: propTypes.string,
-  active: propTypes.bool.isRequired
-}
 export default BurgerIcon;

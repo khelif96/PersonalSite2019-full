@@ -3,7 +3,7 @@ import styles from './Header.module.css';
 import Menu from './Menu/Menu';
 import MobileMenu from './Menu/MobileMenu/MobileMenu';
 
-const Header = () => {
+const Header: React.FC = () => {
   const [menuOpened, setMenuOpened] = useState(true);
   const toggleMenu = () => {
     setMenuOpened(!menuOpened);
